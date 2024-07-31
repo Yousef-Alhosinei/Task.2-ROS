@@ -4,17 +4,21 @@
 Step 1: Download and Install VirtualBox
 Go to the VirtualBox download page and download the latest version for your operating system.
 Install VirtualBox by following the instructions provided on the download page.
+
 Step 2: Download Ubuntu 20.04.4
 Download the Ubuntu 20.04.4 ISO from the official website.
+
 Step 3: Create a Virtual Machine
 Open VirtualBox and click on "New" to create a new virtual machine.
 Name your virtual machine (e.g., "Ubuntu 20.04"), set the Type to "Linux," and the Version to "Ubuntu (64-bit)."
 Allocate memory (RAM) to the virtual machine. A minimum of 2GB is recommended, but 4GB or more is preferred.
 Create a virtual hard disk. The default settings are usually fine, but make sure to allocate enough space (at least 20GB).
+
 Step 4: Install Ubuntu 20.04.4
 Start the newly created virtual machine.
 When prompted to "Select start-up disk," browse and select the downloaded Ubuntu 20.04.4 ISO file.
 Follow the on-screen instructions to install Ubuntu. This includes selecting your language, keyboard layout, and creating a user account.
+
 Step 5: Install ROS Noetic
 Setup your sources.list
 bash
@@ -51,6 +55,7 @@ bash
 sudo apt install python3-rosdep
 sudo rosdep init
 rosdep update
+
 Step 6: Start ROS
 To start the ROS master, use the roscore command:
 
